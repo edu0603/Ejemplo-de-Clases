@@ -1,4 +1,5 @@
 package Marinos;
+
 import Animales.*;
 
 class Marinos extends Animales {
@@ -6,6 +7,14 @@ class Marinos extends Animales {
     protected boolean tieneAletas;
     protected double temperaturaCorporal;
     protected double presiónAgua;
+
+    public Marinos(String sistemaDigestivo, String tiempoDeVida, boolean tieneAletas, Double temperatura,
+            Double presión) {
+        super(sistemaDigestivo, tiempoDeVida);
+        this.tieneAletas = tieneAletas;
+        this.temperaturaCorporal = temperatura;
+        this.presiónAgua = presión;
+    }
 
     public void reproducirse() {
         System.out.println("Un Animal marino se está reproduciendo");
@@ -39,15 +48,7 @@ class Marinos extends Animales {
         this.presiónAgua = presión;
     }
 
-    protected Double getPresiónAgua(){
+    protected Double getPresiónAgua() {
         return this.presiónAgua;
     }
-
-    public Marinos(String sistemaDigestivo, String tiempoDeVida, boolean tieneAletas, Double temperatura, Double presión){
-        super(sistemaDigestivo, tiempoDeVida);
-        this.tieneAletas = tieneAletas;
-        this.temperaturaCorporal = temperatura;
-        this.presiónAgua = presión;
-    }
-
 }
