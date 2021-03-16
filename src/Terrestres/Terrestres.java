@@ -8,6 +8,14 @@ class Terrestres extends Animales {
     protected boolean tienePatas;
 
     public Terrestres(String sistemaDigestivo, String tiempoDeVida,String tipoDeRespiracion,boolean tienePatas){
-	super(String sistemaDigestivo, String tiempoDeVida);
+	super(sistemaDigestivo, tiempoDeVida);
+    }
+
+    public void reproducirse(){
+
+    }
+
+    public void respirar(){
+
     }
 }
