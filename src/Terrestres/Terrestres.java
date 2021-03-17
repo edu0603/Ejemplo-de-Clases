@@ -11,6 +11,7 @@ class Terrestres extends Animales {
 	    super(sistemaDigestivo, tiempoDeVida);
 	    this.tipoDeRespiracion = tipoDeRespiracion;
 	    this.tienePatas = tienePatas;
+		//COmentario
 	
     }
 
