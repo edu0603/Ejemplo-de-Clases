@@ -12,7 +12,7 @@ class Terrestres extends Animales {
     }
 
     public void reproducirse(){
-
+        System.out.println("Animal terrestre se está reproduciendo");
     }
 
     public void respirar(){
