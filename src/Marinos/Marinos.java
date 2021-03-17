@@ -21,7 +21,7 @@ class Marinos extends Animales {
     }
 
     public void respirar() {
-        System.out.println("Un Animal marino se está reproduciendo");
+        System.out.println("Un Animal marino respirando");
     }
 
     public void Nadar() {
