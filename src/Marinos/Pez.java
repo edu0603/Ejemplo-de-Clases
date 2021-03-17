@@ -5,7 +5,7 @@ public class Pez extends Marinos {
         super(sistemaDigestivo, tiempoDeVida, tieneAletas, temperatura, presión);
     }
 
-    protected void beberDelRío(){
+    private void beberDelRío(){
         System.out.println("El pez esta bebiendo del río");
     }
 

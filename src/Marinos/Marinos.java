@@ -8,7 +8,7 @@ class Marinos extends Animales {
     protected double temperaturaCorporal;
     protected double presiónAgua;
 
-    public Marinos(String sistemaDigestivo, String tiempoDeVida, boolean tieneAletas, Double temperatura,
+    protected Marinos(String sistemaDigestivo, String tiempoDeVida, boolean tieneAletas, Double temperatura,
             Double presión) {
         super(sistemaDigestivo, tiempoDeVida);
         this.tieneAletas = tieneAletas;
@@ -24,7 +24,7 @@ class Marinos extends Animales {
         System.out.println("Un Animal marino respirando");
     }
 
-    public void Nadar() {
+    protected void Nadar() {
         System.out.println(".°.. ><(((((° Nadando");
     };
 
