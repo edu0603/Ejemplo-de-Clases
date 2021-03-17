@@ -27,7 +27,7 @@ class Terrestres extends Animales {
     }
     
 	    public String getTipoDeRespiracion () {
-	    	return tipoDeRespiracion;
+	    	return this.tipoDeRespiracion;
 	    }
     
     public void setTienePatas (boolean tienePatas){
@@ -35,12 +35,12 @@ class Terrestres extends Animales {
     }
     
     public boolean getTienePatas () {
-    	return tienePatas;
+    	return this.tienePatas;
     }
     
     public void caminar() {
     	
-    	if (tienePatas == true) {
+    	if (this.tienePatas) {
     		System.out.println("Esta animal tiene la capacidad de caminar.");
     	}
     	
