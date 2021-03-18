@@ -5,13 +5,11 @@ import Animales.*;
 
 
 
-class reptiles extends Animales {
+class Reptiles extends Animales {
 
-    private boolean viviparo;
+    protected boolean viviparo;
     private double temperaturaCorporal;
-    private boolean exoesqueleto;
-    private STRING texturadepiel;
-	private boolean oviparo;
+    private boolean tienecola;
 
     public void reproducirse() {
         System.out.println("Un reptil se está reproduciendo");
@@ -25,21 +23,7 @@ class reptiles extends Animales {
         System.out.println("Esta arrastrandose");
     };
 
-    public void setviviparo(boolean tiene) {
-        this.viviparo = tiene;
-    }
-
-    public boolean getviviparo() {
-        return this.viviparo;
-    }
-    
-    public void setoviparo(boolean tiene) {
-        this.oviparo = tiene;
-    }
-
-    public boolean getoviparo() {
-        return this.oviparo;
-    }
+  
     
     
 
@@ -51,22 +35,20 @@ class reptiles extends Animales {
         this.temperaturaCorporal = temperatura;
     }
 
- public void reptil() {
-    	
-    	if (this.exoesqueleto) {
-    		System.out.println("Esta animal tiene exoesqueleto");
-    	}
-    	
-    	else {
-    		System.out.println("Este animal no es de hueso exoesqueleto");
-    	}
- }
 
-    public reptiles(String sistemaDigestivo, String tiempoDeVida, boolean viviparo, Double temperatura, boolean exoesqueleto){
+    public Reptiles(String sistemaDigestivo, String tiempoDeVida){
         super(sistemaDigestivo, tiempoDeVida);
-        this.viviparo = viviparo;
-        this.temperaturaCorporal = temperatura;
-        this.exoesqueleto = exoesqueleto;
+        this.setTemperaturaCorporal(temperaturaCorporal);
+        
     }
 
+	protected void getTienecola(boolean tienecola) {
+		this.tienecola = tienecola;
+	}
+
+	protected void settienecola(boolean tienecola) {
+		this.tienecola = tienecola;
+	}
+
+	
 }
